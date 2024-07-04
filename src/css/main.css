@@ -4643,4 +4643,19 @@ video {
   height: 20px;
   margin-top: -10px;
 }
+
+.modal__image-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 25rem;
+  width: 55rem;
+}
+
+.modal__image-overflow {
+  overflow: scroll;
+}
+
+.modal__wrapper-size {
+  align-items: normal;
+}
 /* END Single Page Style */

@@ -557,6 +557,7 @@ function sizeSelectiorInit() {
     modalSection.ariaHidden = true;
     modalSection.id = "modal";
     modalWrapper.classList.add("modal__wrapper");
+    modalWrapper.classList.add("modal__wrapper-size");
     modalContent.classList.add("modal__content");
     modalContent.classList.add("modal__content-size");
     modalHeading.classList.add("modal__heading");
@@ -574,11 +575,15 @@ function sizeSelectiorInit() {
 
     const createModalImage = () => {
       const modalImageWrapper = document.createElement("div");
+      modalImageWrapper.classList.add('modal__image-wrapper');
+      const modalImageOverflow = document.createElement("div");
+      modalImageOverflow.classList.add('modal__image-overflow');
       const modalImage = document.createElement("img");
-      modalImage.classList.add("modal__text-size");
+      modalImage.classList.add("modal__image");
       modalImage.src = "./src/img/sizeTable.jpg";
       modalImageWrapper.append(modalImage);
-      modalContent.append(modalImageWrapper);
+      modalImageOverflow.append(modalImageWrapper);
+      modalContent.append(modalImageOverflow);
     };
 
     const handlerClickOk = (e) => {
