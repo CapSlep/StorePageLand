@@ -4506,8 +4506,8 @@ video {
 }
 
 .main__image {
-  /* max-height: 37.5rem;
-  max-width: 37.5rem; */
+  max-height: 37.5rem;
+  max-width: 37.5rem;
   margin: 1rem;
   width: 100%;
 }
