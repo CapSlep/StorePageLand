@@ -4651,11 +4651,13 @@ video {
   width: 55rem;
 }
 
-.modal__image-overflow {
-  overflow: scroll;
-}
+@media (max-width: 900px) {
+  .modal__image-overflow {
+    overflow: scroll;
+  }
 
-.modal__wrapper-size {
-  align-items: normal;
+  .modal__wrapper-size {
+    align-items: normal;
+  }
 }
 /* END Single Page Style */
