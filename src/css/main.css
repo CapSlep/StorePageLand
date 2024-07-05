@@ -3814,8 +3814,8 @@ video {
 }
 
 .logo-left {
-  height: 7.5rem;
-  padding: 1.25rem;
+  height: 5rem;
+  padding: 1rem;
   padding-left: auto;
   padding-right: auto;
 }
@@ -3829,7 +3829,7 @@ video {
   flex-flow: row wrap;
   flex-wrap: nowrap;
   background-color: var(--primary-color, #ffffff);
-  min-height: 100px;
+  /* min-height: 100px; */
   border-top: none;
   border-bottom: none;
   background-color: #001b59;
@@ -4227,24 +4227,36 @@ video {
 
 .banner-content span {
   font-weight: 900;
-  font-size: 27px;
+  font-size: 24px;
   color: #000; /* Black text color */
   text-transform: uppercase;
   line-height: 1;
 }
 
 @media (max-width: 600px) {
+  .banner {
+    padding: 10px 0;
+  }
+
   .banner-content {
     flex-direction: column;
     text-align: center;
   }
 
   .banner-content span {
-    font-size: 24px;
+    font-size: 14px;
   }
 
   .banner-code {
     margin: 10px 0 0 0;
+  }
+
+  .info__stock {
+    display: none;
+  }
+
+  .banner-code {
+    display: none;
   }
 }
 
@@ -4282,12 +4294,12 @@ video {
 }
 
 .info__price span {
-  font-size: 1.425rem;
+  font-size: 1.625rem;
   position: relative;
 }
 
 .info__price sup {
-  font-size: 0.875rem;
+  font-size: 1.075rem;
   vertical-align: 0.3125rem;
 }
 
